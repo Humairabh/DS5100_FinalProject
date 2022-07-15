@@ -7,14 +7,14 @@ from itertools import combinations_with_replacement
 
 class Die:
     """
-    A class used to represent a Die. A die has N sides, or “faces”, and W weights, and can be rolled to select a face. 
+    A class used to represent a Die. A die has N sides, or "faces", and W weights, and can be rolled to select a face. 
 
     ...
 
     Attributes
     ----------
     N : array
-        an array of sides, or “faces” for the Die
+        an array of sides, or "faces" for the Die
     W : array
         an array of weights corresponding the the array of faces, defaults to 1.0 for each face
         
@@ -38,7 +38,7 @@ class Die:
         Parameters
         ----------
         N : array
-            an array of sides, or “faces” for the Die
+            an array of sides, or "faces" for the Die
         W : array
             an array of weights corresponding the the array of faces, 
             defaults to 1.0 for each face but can be changed after the object is created.
