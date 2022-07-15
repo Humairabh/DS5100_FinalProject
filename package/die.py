@@ -65,11 +65,13 @@ class Die:
             new_weight : float
                 the new weight
         """
-        
-        if ((face in self.N) and (isinstance(float(new_weight), float) == True)):
-            self.W[self.N.index(face)] = new_weight
-            self._dfpriv = pd.DataFrame({'faces': self.N, 'weights': self.W})
-        
+        try: 
+            new_weight = float(new_weight)
+        except ValueError:
+            print("Oops!  That was no valid number.  Try again...")
+            
+        if face in self._dfpriv.faces.values:
+            self._dfpriv.loc[self._dfpriv.faces == face, "weights"] = new_weight
         
         
     def roll_die(self, nrolls=1):
@@ -88,7 +90,6 @@ class Die:
               k=nrolls)
         return pd.Series(result)
     
-
     
     
     
