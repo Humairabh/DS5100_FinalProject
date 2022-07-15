@@ -1,6 +1,6 @@
 # DS5100_FinalProject
 
-Title:    Final Project
+Title:    Final Project \n
 Author:   Humaira Halim 
 Date:     July 15, 2022 
 Comment:  In this project I will write, package, and publish a Python module and accompanying files. 
