@@ -142,7 +142,7 @@ class Game:
                 the number of times to roll the dice 
         """        
         
-        self._playdf = pd.DataFrame({'Roll #': range(0+1, len(self.dice[0].N)+1)}).set_index('Roll #')
+        self._playdf = pd.DataFrame({'Roll #': range(0+1, len(self.dice[0].N)+2)}).set_index('Roll #')
         for x in range(len(self.dice)):
             self._playdf["Die"+str(x+1)] = self.dice[x].roll_die(nrolls+1)
     
