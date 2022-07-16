@@ -62,3 +62,36 @@ analyze_game.jackpot()<br />
 
 #### Return the number of jackpots <br />
 analyze_game.combo()<br />
+
+## Die object Documentation:
+
+class Die: <br />
+    """ <br />
+    A class used to represent a Die. A die has N sides, or "faces", and W weights, and can be rolled to select a face. <br />
+<br />
+    ... <br />
+<br />
+    Attributes <br />
+    ---------- <br />
+    N : array <br />
+        an array of sides, or "faces" for the Die <br />
+    W : array <br />
+        an array of weights corresponding the the array of faces, defaults to 1.0 for each face <br />
+      <br />  
+    Methods <br />
+    ------- <br />
+    __init__ <br />
+        Takes an array of faces as an argument. The array's data type (dtype) may be strings or numbers. <br />
+        Internally initializes the weights to 1.0 for each face. <br />
+        Saves both faces and weights into a private dataframe that is to be shared by the other methods. <br />
+     <br />
+    change_weight(self, face, new_weight) <br />
+        A method to change the weight of a single side <br />
+        <br />
+    roll_die(self, nrolls=1) <br />
+        A method to roll the die one or more times. Defaults to 1 roll <br />
+    """ <br />
+
+
+
+
