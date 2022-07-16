@@ -148,13 +148,13 @@ class Die: <br />
 
 DS5100_FinalProject <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .gitignore <br />
-    LICENSE <br />
-    README.md <br />
-    setup.py <br />
-    package <br />
-        FinalProjectSubmissionTemplate.ipynb <br />
-        __init__.py <br />
-        results.txt <br />
-        test.py <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    LICENSE <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    README.md <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    setup.py <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    package <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        FinalProjectSubmissionTemplate.ipynb <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        __init__.py <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        results.txt <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        test.py <br />
 
 
