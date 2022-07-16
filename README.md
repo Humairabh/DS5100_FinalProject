@@ -26,16 +26,25 @@ from itertools import groupby <br />
 
 ## Code sample to use Die object: <br />
 
-### Create Die
+#### Create Die object
 narray = np.array(['a', 'b', 'c']) <br />
 attempt = Die(narray) <br />
 
-### Change weight
+#### Change weight
 attempt.change_weight('a',10) <br />
 attempt.W #can see the weight has changed <br />
 
-### Roll Die 
+#### Roll Die 
 attempt.roll_die(3) <br />
 
 
+## Code sample to use Game object: <br />
 
+#### Create Game object <br />
+mygame = Game([attempt,attempt]) #using two Die objects <br />
+
+#### Play a game <br />
+type(mygame.play(4)) #roll each Die 4 times <br />
+
+#### Show the dataframe of results <br />
+len(mygame.show("narrow")) #show the Game outcome in a narrow dataframe format <br />
