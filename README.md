@@ -147,7 +147,7 @@ class Die: <br />
 ## Manifest: <br />
 
 DS5100_FinalProject <br />
->    .gitignore <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .gitignore <br />
     LICENSE <br />
     README.md <br />
     setup.py <br />
