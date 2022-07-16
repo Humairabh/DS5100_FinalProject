@@ -119,6 +119,7 @@ class Die: <br />
     """  <br />
 
 ## Analyzer Object Documentation: <br />
+ <br />
     """ <br />
     A class which takes the results of a single game and computes various descriptive statistical properties about it.  <br />
     These properties results are available as attributes of an Analyzer object. <br />
