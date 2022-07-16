@@ -6,9 +6,8 @@ Date:     July 15, 2022 <br />
 Comment:  In this project I will write, package, and publish a Python module and accompanying files. <br /> 
           The project will implement a simple Monte Carlo simulator using a set of related classes.
 
-## Synopsis
+## To Install: <br />
 
-To Install: <br />
 git clone https://github.com/Humairabh/DS5100_FinalProject.git <br />
 !pip install "path to local file"  <br />
           
