@@ -63,7 +63,7 @@ analyze_game.jackpot()<br />
 #### Return the number of jackpots <br />
 analyze_game.combo()<br />
 
-## Die object Documentation:
+## Die Object Documentation:
 
 class Die: <br />
     """ <br />
@@ -92,6 +92,29 @@ class Die: <br />
         A method to roll the die one or more times. Defaults to 1 roll <br />
     """ <br />
 
-
-
+## Game Object Documentation: <br />
+ <br />
+    """  <br />
+    A class used to represent a Game. A game consists of rolling of one or more dice of the same kind one or more times.  <br />
+    The class keeps the results of its most recent play.   <br />
+ <br />
+    ...  <br />
+ <br />
+    Attributes  <br />
+    ----------  <br />
+    dice : array  <br />
+        a list of already instantiated similar Die objects  <br />
+ <br />
+    Methods  <br />
+    -------  <br />
+    __init__  <br />
+        Takes a single parameter, a list of already instantiated similar Die objects.  <br />
+ <br />        
+    play(self, nrolls)  <br />
+        Takes a parameter to specify how many times the dice should be rolled.  <br />
+        Saves the result of the play to a private dataframe of shape N rolls by M dice which can be accessed with show()  <br />
+ <br />        
+    show(self, show='wide')  <br /> 
+        A method to pass the private play() dataframe to the user. Defaults to a wide dataframe  <br />
+    """  <br />
 
