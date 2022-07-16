@@ -4,6 +4,16 @@ import random
 from random import choices
 from itertools import combinations
 from itertools import combinations_with_replacement
+from itertools import groupby
+
+import unittest
+import numpy as np
+import pandas as pd
+import random
+from random import choices
+from itertools import combinations
+from itertools import combinations_with_replacement
+from itertools import groupby
 
 class Die:
     """
@@ -143,9 +153,13 @@ class Game:
         """        
         
         self._playdf = pd.DataFrame({'Roll #': range(0+1, len(self.dice[0].N)+2)}).set_index('Roll #')
-        for x in range(len(self.dice)):
-            self._playdf["Die"+str(x+1)] = self.dice[x].roll_die(nrolls+1)
-    
+        #for x in range(len(self.dice)):
+        #    self._playdf["Die"+str(x+1)] = self.dice[x].roll_die(nrolls+1)
+        roll = [i for i in range(1,nrolls+1)]
+        for i in range(0+1,nrolls):
+            self._playdf = pd.DataFrame({'rollNumber':roll}).set_index('rollNumber')        
+        for i in range(len(self.dice)):
+            self._playdf[i]=self.dice[i].roll_die(nrolls)
     
         
     def show(self, show='wide'):
@@ -258,6 +272,12 @@ class Analyzer:
         self.fc.columns.name = "Face"
         
         comb = list(combinations_with_replacement(self.fc.columns.tolist(), len(self.game.dice)))
-
-        return comb
         
+        x = pd.Series(self.game.show().values.tolist())
+        x = x.value_counts().rename_axis('unique_combinations').reset_index(name='counts')
+        for combo in comb:
+            if combo not in x['unique_combinations']:
+                x.loc[len(x)+1]=[combo,0]
+        x = x.set_index('unique_combinations')
+        
+        return x
