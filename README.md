@@ -118,3 +118,31 @@ class Die: <br />
         A method to pass the private play() dataframe to the user. Defaults to a wide dataframe  <br />
     """  <br />
 
+## Analyzer Object Documentation: <br />
+    """ <br />
+    A class which takes the results of a single game and computes various descriptive statistical properties about it.  <br />
+    These properties results are available as attributes of an Analyzer object. <br />
+<br />
+    ... <br />
+<br />
+    Attributes <br />
+    ---------- <br />
+    game : game object <br />
+        an object of class Game <br />
+<br />        
+    Methods <br />
+    ------- <br />
+    __init__ <br />
+        Takes a game object as its input parameter. <br />
+        At initialization time, it also infers the data type of the die faces used <br />
+<br />        
+    jackpot(self) <br />
+        A method to compute how many times the game resulted in all faces being identical <br />
+<br />        
+    combo(self, show='wide') <br />
+        A method to compute the distinct combinations of faces rolled, along with their counts <br />
+    """  <br />
+
+
+
+
