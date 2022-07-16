@@ -10,7 +10,7 @@ Comment:  In this project I will write, package, and publish a Python module and
 
 To Install: <br />
 git clone https://github.com/Humairabh/DS5100_FinalProject.git <br />
-!pip install <path to local file> <br />
+!pip install "path to local file"  <br />
           
 ## To Import: <br />
 
@@ -24,5 +24,18 @@ from random import choices <br />
 from itertools import combinations_with_replacement <br />
 from itertools import groupby <br />
 
-## Code sample to create Die object: <br />
-          
+## Code sample to use Die object: <br />
+
+### Create Die
+narray = np.array(['a', 'b', 'c']) <br />
+attempt = Die(narray) <br />
+
+### Change weight
+attempt.change_weight('a',10) <br />
+attempt.W #can see the weight has changed <br />
+
+### Roll Die 
+attempt.roll_die(3) <br />
+
+
+
