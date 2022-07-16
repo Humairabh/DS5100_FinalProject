@@ -144,6 +144,17 @@ class Die: <br />
         A method to compute the distinct combinations of faces rolled, along with their counts <br />
     """  <br />
 
+## Manifest: <br />
 
+DS5100_FinalProject <br />
+    .gitignore <br />
+    LICENSE <br />
+    README.md <br />
+    setup.py <br />
+    package <br />
+        FinalProjectSubmissionTemplate.ipynb <br />
+        __init__.py <br />
+        results.txt <br />
+        test.py <br />
 
 
